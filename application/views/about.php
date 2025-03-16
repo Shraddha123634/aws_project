@@ -19,7 +19,7 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo URL ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URL.'about' ?>">About</a>
+                    <a class="nav-link" href="<?php echo URL.'about' ?>">About Us</a>
                 </li>
             </ul>
             </div>
