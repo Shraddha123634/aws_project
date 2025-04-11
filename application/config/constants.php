@@ -84,4 +84,4 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-defined('URL')        OR define('URL', 'http://54.197.11.193/aws_project/'); // no errors
+defined('URL')        OR define('URL', 'http://trackerzz.club'); // no errors
