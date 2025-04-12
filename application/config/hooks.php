@@ -12,11 +12,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$hook['pre_system'][] = array(
-    'class'    => 'Cors',
-    'function' => 'enableCors',
-    'filename' => 'Cors.php',
-    'filepath' => 'hooks',
-    'params'   => array()
-);
-

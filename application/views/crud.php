@@ -72,7 +72,7 @@
         function deleteEntry(id) {
             $.ajax({
                 type: "POST",
-                url: "<?php echo URL ?>/crud/delete",   // The PHP script to process the request
+                url: "crud/delete",   // The PHP script to process the request
                 data: { id: id },  // Send the name data
                 success: function(response) {
                     var responseObj = JSON.parse(response);  // Parse JSON response
