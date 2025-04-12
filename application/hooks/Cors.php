@@ -10,6 +10,8 @@ class Cors {
 
         $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
 
+        print_r($origin); exit;
+
         if (in_array($origin, $allowed_origins)) {
             header("Access-Control-Allow-Origin: $origin");
             header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
