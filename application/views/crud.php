@@ -19,7 +19,7 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo URL ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URL.'about' ?>">About</a>
+                    <a class="nav-link" href="<?php echo URL.'/about' ?>">About</a>
                 </li>
             </ul>
             </div>
@@ -72,7 +72,7 @@
         function deleteEntry(id) {
             $.ajax({
                 type: "POST",
-                url: "<?php echo URL ?>crud/delete",   // The PHP script to process the request
+                url: "<?php echo URL ?>/crud/delete",   // The PHP script to process the request
                 data: { id: id },  // Send the name data
                 success: function(response) {
                     var responseObj = JSON.parse(response);  // Parse JSON response
