@@ -57,7 +57,7 @@
                                 <th scope="row"><?php echo ($key + 1) ?></th>
                                 <td><?php echo !empty($list['email']) ? $list['email'] : '' ?></td>
                                 <td><?php echo !empty($list['password']) ? $list['password'] : '' ?></td>
-                                <td><a type="button" class="btn" onclick="deleteEntry(<?php echo $list['id'] ?>)" >Delete</a></td>
+                                <td><a type="button" class="btn btn-danger" onclick="deleteEntry(<?php echo $list['id'] ?>)" >Delete</a></td>
                             </tr>
                         <?php } ?>
                         </tbody>
