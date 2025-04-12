@@ -3,7 +3,8 @@
 $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
 
 $allowed_origins = [
-    'https://www.trackerzz.club'
+    'https://trackerzz.club',
+	'https://www.trackerzz.club'
 ];
 
 if (in_array($origin, $allowed_origins)) {
