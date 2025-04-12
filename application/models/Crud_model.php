@@ -23,7 +23,7 @@ class Crud_model extends CI_Model{
   public function delete()
   {
       $id = $this->input->post('id');
-      return $this->db->delete('user_details', array('id' => $id));
+      $this->db->delete('user_details', array('id' => (int)$id));
   }
 
 }
