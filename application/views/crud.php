@@ -48,7 +48,7 @@
                                 <th scope="col">Sr. No.</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Password</th>
-                                <th scope="col">Action</th>
+                                <!-- <th scope="col">Action</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -57,7 +57,7 @@
                                 <th scope="row"><?php echo ($key + 1) ?></th>
                                 <td><?php echo !empty($list['email']) ? $list['email'] : '' ?></td>
                                 <td><?php echo !empty($list['password']) ? $list['password'] : '' ?></td>
-                                <td><a class="btn" onclick="deleteEntry(<?php echo $list['id'] ?>)" >Delete</a></td>
+                                <!-- <td><a class="btn" onclick="deleteEntry(<?php //echo $list['id'] ?>)" >Delete</a></td> -->
                             </tr>
                         <?php } ?>
                         </tbody>
@@ -75,9 +75,16 @@
                 url: "crud/delete",   // The PHP script to process the request
                 data: { id: id },  // Send the name data
                 success: function(response) {
+                    console.log(response);
                     var responseObj = JSON.parse(response);  // Parse JSON response
-                    alert(responseObj.status);  // Handle the response as needed
-                    location.reload();
+
+                    if(responseObj.status == 'success') {
+                        alert(responseObj.status);  // Handle the response as needed
+                        location.reload();
+                    } else {
+                        alert(responseObj.status);  // Handle the response as needed
+                    }
+
                 },
                 error: function() {
                     $('#result').html('An error occurred');
